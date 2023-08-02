@@ -1,0 +1,57 @@
+/* COLORS */
+
+.bg-grey {
+  background-color: #cecece;
+}
+
+.bg-orange {
+  background-color: #f8a822;
+}
+
+.bg-white {
+  background-color: white;
+}
+
+.bg-blue {
+  background-color: rgb(64, 155, 240);
+}
+
+.bg-purple {
+  background-color: rgb(198, 95, 246);
+}
+
+.bg-green {
+  background-color: rgb(54, 226, 169);
+}
+
+.bg-scarlet {
+  background-color: rgb(241, 60, 90);
+}
+
+.bg-smoke {
+  background-color: rgba(139, 139, 139, 0.68);
+}
+
+.bg-tr-cabbage {
+  background-color: rgba(202, 218, 21, 0.5);
+}
+
+/* TEXT COLOR */
+
+.txt-light {
+  color: rgb(238, 238, 238);
+}
+
+.txt-highlight {
+  color: red;
+}
+
+@media (min-width: 1024px) {
+  .text-transparent {
+    color: rgba(255, 255, 255, 0);
+  }
+
+  .text-transparent:hover {
+    color: rgba(0, 0, 0, 1);
+  }
+}

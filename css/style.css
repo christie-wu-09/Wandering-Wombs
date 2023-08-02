@@ -1,0 +1,138 @@
+/* a minimalist set of CSS resets */
+
+/* root color */
+:root {
+  --blue: #1e90ff;
+  --white: #ffffff;
+  --orange: #f8a822;
+}
+/* default to border-box */
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* adjust typography defaults */
+body {
+  margin: 1rem;
+  font-family: sans-serif;
+  line-height: 1.5;
+}
+
+/* images and videos max out at full width */
+img,
+video {
+  height: auto;
+  max-width: 100%;
+}
+
+/* CLASSES */
+
+/* Custom Ids*/
+
+@media (min-width: 768px) {
+  /* global*/
+
+  nav {
+    width: 100%;
+    margin: auto;
+    padding: 40px 5vw;
+  }
+
+  .button {
+    border-radius: 100px;
+    border-style: solid;
+    padding: 8px 32px;
+  }
+  .button:hover {
+    background-color: var(--orange);
+  }
+
+  .glass {
+    border-radius: 100px;
+    padding: 8px 32px;
+    background: rgba(123, 123, 123, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+  }
+
+  .slide-in-page {
+    width: 100%;
+    min-height: 100vh;
+    padding: 10vh 5vw;
+    position: absolute;
+    z-index: 10;
+    top: 0;
+  }
+
+  .x {
+    text-align: right;
+    margin: -8vh -2vw 0 0;
+  }
+
+  /*img size*/
+
+  .pos-11oclock {
+    bottom: 70%;
+    left: 20%;
+  }
+
+  .pos-2oclock {
+    position: absolute;
+    bottom: 55%;
+    right: 10%;
+  }
+
+  .pos-5oclock {
+    position: absolute;
+    bottom: 10%;
+    right: 25%;
+  }
+
+  .pos-8oclock {
+    position: absolute;
+    bottom: 25%;
+    left: 10%;
+  }
+
+  /*homepage customization*/
+  .screen {
+    width: 100%;
+  }
+
+  .disclaimer {
+    z-index: 10;
+  }
+
+  #about-page {
+    display: none;
+  }
+
+  .home-thumb,
+  #home-thumb-1,
+  #home-thumb-2,
+  #home-thumb-3,
+  #home-thumb-4 {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .home-thumb-hide,
+  #home-thumb-hide-1,
+  #home-thumb-hide-2,
+  #home-thumb-hide-3,
+  #home-thumb-hide-4 {
+    display: none;
+    padding: 15px 0;
+  }
+}
